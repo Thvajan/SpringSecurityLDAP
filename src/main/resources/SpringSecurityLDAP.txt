@@ -1,0 +1,14 @@
+LDAP - LightWeight Data Access Protocol
+Add following dependencies:
+	spring-security-ldap
+	unboundid-ldapsdk
+	unboundid-ldapsdk
+
+Set Properties:
+	spring.ldap.embedded.port=8389
+	spring.ldap.embedded.ldif=classpath:ldap-data.ldif
+	spring.ldap.embedded.base-dn=dc=springframework,dc=org
+		-dc=org is root
+		-dc=springframework is below root
+	ldif - LDAP Data Interchange Format
+		file data available in Sprig.io ldap support page
